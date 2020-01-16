@@ -1,32 +1,31 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
-  </div>
+  <router-view />
 </template>
 
 <style lang="less">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+body {
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+  background-color: #fafafa;
 }
 
-#nav {
-  padding: 30px;
+.nav-bar-holder {
+  height: 46px;
+  &-sp {
+    height: 54px;
+  }
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+.tab-bar-holder {
+  height: 50px;
+  &-sp {
+    height: 58px;
+  }
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+.white-space {
+  height: 8px;
+  &-lg {
+    height: 16px;
   }
 }
 </style>
